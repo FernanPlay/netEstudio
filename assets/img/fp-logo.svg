@@ -1,0 +1,10 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Logo FP</title>
+  <desc id="desc">Logo con las letras FP para la pagina de inicio de sesion.</desc>
+  <rect x="10" y="10" width="108" height="108" rx="24" fill="#101828"/>
+  <path d="M26 26H102V102H26V26Z" fill="#F9FAFB"/>
+  <path d="M38 42H75C85 42 92 49 92 59C92 69 85 76 75 76H55V96H38V42Z" fill="#101828"/>
+  <path d="M55 57V62H73C75 62 77 61 77 59C77 57 75 57 73 57H55Z" fill="#31C48D"/>
+  <path d="M88 86C88 91 84 96 78 96H62V82H76C79 82 81 80 81 77V42H98V77C98 81 94 84 88 86Z" fill="#155EEF"/>
+  <path d="M26 102L49 79H68L45 102H26Z" fill="#31C48D"/>
+</svg>

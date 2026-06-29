@@ -1,0 +1,18 @@
+<svg width="560" height="420" viewBox="0 0 560 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Panel seguro de acceso</title>
+  <desc id="desc">Ilustracion de una tarjeta de seguridad con un candado.</desc>
+  <rect x="64" y="52" width="432" height="316" rx="18" fill="#F8FAFC"/>
+  <rect x="92" y="90" width="376" height="60" rx="10" fill="#D8EFEA"/>
+  <rect x="116" y="112" width="116" height="16" rx="8" fill="#0F766E"/>
+  <rect x="92" y="178" width="172" height="128" rx="12" fill="#E6F4F1"/>
+  <rect x="292" y="178" width="176" height="128" rx="12" fill="#EAF2FF"/>
+  <path d="M341 242C341 221.565 357.565 205 378 205C398.435 205 415 221.565 415 242V253H341V242Z" stroke="#155E75" stroke-width="14" stroke-linecap="round"/>
+  <rect x="323" y="246" width="110" height="82" rx="14" fill="#155E75"/>
+  <circle cx="378" cy="286" r="11" fill="#F8FAFC"/>
+  <path d="M378 294V309" stroke="#F8FAFC" stroke-width="8" stroke-linecap="round"/>
+  <rect x="118" y="208" width="94" height="12" rx="6" fill="#0F766E"/>
+  <rect x="118" y="236" width="118" height="12" rx="6" fill="#94A3B8"/>
+  <rect x="118" y="264" width="76" height="12" rx="6" fill="#94A3B8"/>
+  <circle cx="445" cy="112" r="16" fill="#0F766E"/>
+  <path d="M438 112L443 117L453 106" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
