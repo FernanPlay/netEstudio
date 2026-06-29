@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | FP</title>
+  <link rel="icon" type="image/svg+xml" href="assets/img/fp-logo.svg">
+  <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand-line" href="dashboard.html" aria-label="Dashboard FP">
+      <img src="assets/img/fp-logo.svg" alt="Logo FP">
+      <span>FP Estudio</span>
+    </a>
+    <button class="logout-button" id="logoutButton" type="button">Cerrar sesion</button>
+  </header>
+
+  <main class="dashboard">
+    <section class="welcome-panel">
+      <p class="eyebrow">Dashboard v0.0.2</p>
+      <h1>Hola, <span id="userName">estudiante</span></h1>
+      <p>Este sera tu espacio principal para organizar herramientas y contenido de estudio.</p>
+    </section>
+
+    <section class="summary-grid" aria-label="Resumen de estudio">
+      <article class="summary-card">
+        <span>Notas</span>
+        <strong>0</strong>
+        <p>Seccion lista para futuras notas.</p>
+      </article>
+      <article class="summary-card">
+        <span>Tareas</span>
+        <strong>0</strong>
+        <p>Espacio para trabajos pendientes.</p>
+      </article>
+      <article class="summary-card">
+        <span>Recursos</span>
+        <strong>0</strong>
+        <p>Guarda enlaces o materiales despues.</p>
+      </article>
+    </section>
+  </main>
+
+  <script src="assets/js/dashboard.js"></script>
+</body>
+</html>

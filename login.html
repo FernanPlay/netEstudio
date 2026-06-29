@@ -5,20 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login | FP</title>
   <link rel="icon" type="image/svg+xml" href="assets/img/fp-logo.svg">
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/login.css">
 </head>
 <body>
   <main class="login-page">
     <section class="brand-panel" aria-label="Presentacion">
       <div class="brand-content">
-        <a class="brand-mark" href="index.html" aria-label="Inicio FP">
+        <a class="brand-mark" href="login.html" aria-label="Inicio FP">
           <img src="assets/img/fp-logo.svg" alt="Logo FP">
           <span>FP</span>
         </a>
         <img class="brand-visual" src="assets/img/login-visual.svg" alt="Panel seguro de acceso">
         <p class="eyebrow">Sistema FP</p>
         <h1>Acceso rapido y seguro</h1>
-        <p>Panel de ingreso optimizado para computadora y celular.</p>
+        <p>Panel de ingreso para estudiantes registrados.</p>
       </div>
     </section>
 
@@ -30,20 +30,20 @@
         </div>
 
         <div class="form-header">
-          <p class="eyebrow">Version 0.0.1</p>
+          <p class="eyebrow">Version 0.0.2</p>
           <h2>Iniciar sesion</h2>
-          <p>Ingresa tus credenciales para continuar.</p>
+          <p>Ingresa con tu usuario o correo para continuar.</p>
         </div>
 
         <div class="field-group">
-          <label for="username">Usuario</label>
-          <input id="username" name="username" type="text" autocomplete="username" placeholder="admin" required>
+          <label for="login">Usuario o correo</label>
+          <input id="login" name="login" type="text" autocomplete="username" placeholder="tu usuario o correo" required>
         </div>
 
         <div class="field-group">
           <label for="password">Contrasena</label>
           <div class="password-field">
-            <input id="password" name="password" type="password" autocomplete="current-password" placeholder="123456" required>
+            <input id="password" name="password" type="password" autocomplete="current-password" placeholder="tu contrasena" required>
             <button class="icon-button" id="togglePassword" type="button" aria-label="Mostrar contrasena" title="Mostrar contrasena">
               <svg class="eye-icon eye-open" viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"></path>
@@ -59,10 +59,9 @@
           </div>
         </div>
 
-        <p class="helper-text">Prueba: usuario <strong>admin</strong> y contrasena <strong>123456</strong>.</p>
-
         <button class="submit-button" type="submit">Entrar</button>
 
+        <p class="helper-text account-link">No tienes cuenta? <a href="register.html">Crear cuenta</a></p>
       </form>
     </section>
   </main>

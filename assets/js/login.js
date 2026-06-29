@@ -1,10 +1,5 @@
-const credentials = {
-  username: "admin",
-  password: "123456"
-};
-
 const form = document.querySelector("#loginForm");
-const usernameInput = document.querySelector("#username");
+const loginInput = document.querySelector("#login");
 const passwordInput = document.querySelector("#password");
 const togglePasswordButton = document.querySelector("#togglePassword");
 const toast = document.querySelector("#toast");
@@ -22,6 +17,7 @@ function showToast(message, type) {
 }
 
 function setInvalidState(isInvalid) {
+  loginInput.classList.toggle("is-invalid", isInvalid);
   passwordInput.classList.toggle("is-invalid", isInvalid);
 }
 
@@ -40,29 +36,44 @@ togglePasswordButton.addEventListener("click", () => {
   );
 });
 
-passwordInput.addEventListener("input", () => {
-  setInvalidState(false);
+[loginInput, passwordInput].forEach((input) => {
+  input.addEventListener("input", () => setInvalidState(false));
 });
 
-form.addEventListener("submit", (event) => {
+form.addEventListener("submit", async (event) => {
   event.preventDefault();
 
-  const username = usernameInput.value.trim();
+  const login = loginInput.value.trim();
   const password = passwordInput.value;
-  const isValid = username === credentials.username && password === credentials.password;
 
-  if (!isValid) {
+  if (!login || !password) {
     setInvalidState(true);
-    showToast("Usuario o contrasena incorrectos.", "error");
-    passwordInput.focus();
+    showToast("Completa usuario/correo y contrasena.", "error");
     return;
   }
 
-  setInvalidState(false);
-  showToast("Inicio de sesion correcto.", "success");
-  form.reset();
-  passwordInput.type = "password";
-  togglePasswordButton.classList.remove("is-visible");
-  togglePasswordButton.setAttribute("aria-label", "Mostrar contrasena");
-  togglePasswordButton.setAttribute("title", "Mostrar contrasena");
+  try {
+    const response = await fetch("api/login.php", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ login, password })
+    });
+
+    const data = await response.json();
+
+    if (!response.ok) {
+      setInvalidState(true);
+      showToast(data.message || "Usuario o contrasena incorrectos.", "error");
+      return;
+    }
+
+    showToast("Inicio de sesion correcto.", "success");
+    window.setTimeout(() => {
+      window.location.href = "dashboard.html";
+    }, 600);
+  } catch (error) {
+    showToast("Abre la pagina desde WAMP/PHP para usar la base de datos.", "error");
+  }
 });
