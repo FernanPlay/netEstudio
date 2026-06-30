@@ -6,14 +6,14 @@ async function loadSession() {
     const response = await fetch("api/session.php");
 
     if (!response.ok) {
-      window.location.href = "login.html";
+      window.location.href = "index.html";
       return;
     }
 
     const data = await response.json();
     userName.textContent = data.user.name || data.user.username;
   } catch (error) {
-    window.location.href = "login.html";
+    window.location.href = "index.html";
   }
 }
 
@@ -23,7 +23,7 @@ logoutButton.addEventListener("click", async () => {
       method: "POST"
     });
   } finally {
-    window.location.href = "login.html";
+    window.location.href = "index.html";
   }
 });
 

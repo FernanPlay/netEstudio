@@ -21,7 +21,7 @@ Crear una pagina para estudio que pueda crecer poco a poco con nuevas funciones,
 
 ## Paginas
 
-- `login.html`: pagina de inicio de sesion.
+- `index.html`: pagina de inicio de sesion.
 - `register.html`: pagina de registro.
 - `dashboard.html`: panel simple despues de iniciar sesion.
 
@@ -46,4 +46,4 @@ Para que el registro y el login funcionen con `datos.db`, abre el proyecto desde
 
 ## Link de pagina web
 
-[Abrir pagina web](https://fernanplay.github.io/netEstudio/login.html)
+[Abrir pagina web](https://fernanplay.github.io/netEstudio/index.html)
